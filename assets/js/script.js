@@ -26,6 +26,7 @@ function moveButton() {
 
 moveButton(); // первый запуск
 window.addEventListener("resize", moveButton);
+
 // ============================================================================
 // REQUEST MODAL
 const showModalBtn = document.querySelectorAll("#show-btn");
