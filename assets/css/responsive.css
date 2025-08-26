@@ -2,6 +2,10 @@
   .container {
     padding: 0 10px;
   }
+  .banner-wrapper {
+    height: 655px;
+    position: relative;
+  }
 }
 
 @media (max-width: 992px) {
