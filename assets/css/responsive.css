@@ -58,6 +58,14 @@
     justify-content: center;
     align-items: center;
   }
+  .about-collegue-wrapper .about-collegue {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-collegue-wrapper {
+    top: -80px;
+  }
 }
 
 @media (max-width: 768px) {

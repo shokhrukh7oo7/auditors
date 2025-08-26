@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RFDewiExpanded";
+  src: url("../fonts/RFDewiExpanded-Bold.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* FONTS END */
 
 /* LAYOUT CSS END */
@@ -314,6 +321,7 @@ p {
   font-size: clamp(24px, 3vw, 48px);
   font-weight: 700;
   color: var(--text-color-white);
+  font-family: "RFDewiExpanded", "sans-serif";
   line-height: 100%;
   margin: 0;
 }
@@ -356,5 +364,53 @@ p {
   background-color: var(--blue-color);
   color: var(--text-color-white);
 }
+/* about collegue start*/
+.about-collegue-section {
+  position: relative;
+}
+.about-collegue-wrapper {
+  background-color: var(--text-color-white);
+  border-radius: 40px;
+  padding: clamp(60px, 10vw, 120px) 0;
+  position: absolute;
+  width: 100%;
+  top: -114px;
+}
+.about-collegue-wrapper .about-collegue {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+.about-collegue-wrapper .about-collegue h3 {
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--blue-color);
+  line-height: 100%;
+  font-family: "RFDewiExpanded", "sans-serif";
+  margin: 0;
+}
+.about-collegue-wrapper .about-collegue p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+  width: 100%;
+  max-width: 650px;
+}
 
+.about-collegue-wrapper .about-collegue .about-collegue-btn {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+  border-radius: 4px;
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 500;
+  padding: 9px 18px;
+}
+.about-collegue-wrapper .about-collegue .about-collegue-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+}
+/* about collegue end*/
 /* MAIN CSS END */
