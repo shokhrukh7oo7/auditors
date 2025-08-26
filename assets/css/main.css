@@ -136,6 +136,11 @@ p {
   font-weight: 400;
   color: var(--text-color-black);
 }
+.header-wrapper .langugage-container .language-wrapper .dropdown-item {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-color-black);
+}
 .header-wrapper .langugage-container .language-wrapper .btn:active {
   border-color: transparent;
 }
@@ -149,6 +154,7 @@ p {
   color: var(--text-color-white);
   background-color: var(--blue-color);
   padding: 9px 18px;
+  border-radius: 4px;
 }
 .show-btn:hover {
   background-color: var(--text-color-white);
@@ -177,3 +183,69 @@ p {
   border-radius: 2px;
 }
 /* HEADER CSS END */
+
+/* MAIN CSS START */
+.banner-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 755px;
+  border-radius: 40px;
+  /* border-radius: clamp(20px, 3vw, 40px); */
+}
+.banner-wrapper .banner-content {
+  width: 100%;
+  max-width: 611px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 16px);
+  padding: 200px 0;
+}
+.banner-wrapper .banner-content h1 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  line-height: 100%;
+  margin: 0;
+}
+.banner-wrapper .banner-content p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  line-height: 140%;
+}
+.banner-wrapper .banner-content .banner-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.banner-wrapper .banner-content .banner-btn-wrapper .left-btn {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 4px;
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+}
+
+.banner-wrapper .banner-content .banner-btn-wrapper .left-btn:hover {
+  background-color: var(--text-color-white);
+  color: var(--blue-color);
+}
+
+.banner-wrapper .banner-content .banner-btn-wrapper .right-btn {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 4px;
+  background-color: var(--text-color-white);
+  color: var(--blue-color);
+}
+
+.banner-wrapper .banner-content .banner-btn-wrapper .right-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+}
+
+/* MAIN CSS END */
