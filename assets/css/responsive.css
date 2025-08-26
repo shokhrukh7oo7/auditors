@@ -69,4 +69,7 @@
   .banner-wrapper .banner-content .banner-btn-wrapper {
     flex-direction: column;
   }
+  .request-modal form .form-wrapper .form-list {
+    flex-direction: column;
+  }
 }

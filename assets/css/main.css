@@ -27,6 +27,8 @@
   --text-color-black: #0a090c;
   --text-color-white: #ffffff;
   --blue-color: #1f3483;
+  --grey-color: #f0edee;
+  --dark-grey: #505050;
 }
 
 * {
@@ -161,6 +163,12 @@ p {
   color: var(--blue-color);
   border-color: var(--blue-color);
 }
+.show-btn:focus-visible {
+  color: var(--text-color-white);
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+  outline: 0;
+}
 /* Скрываем бургер на больших экранах */
 .burger {
   display: none;
@@ -181,6 +189,107 @@ p {
   height: 3px;
   background: #000; /* цвет полосок */
   border-radius: 2px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 4;
+}
+.hidden {
+  display: none;
+}
+.request-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 613px;
+  background-color: var(--text-color-white);
+  padding: clamp(16px, 1.5vw, 24px);
+  z-index: 10;
+  border-radius: 8px;
+}
+.request-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request-modal h3 {
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--blue-color);
+  line-height: 100%;
+}
+.request-modal form .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1.5vw, 24px);
+}
+.request-modal form .form-wrapper .form-list {
+  display: flex;
+  gap: clamp(5px, 1.5vw, 24px);
+}
+.request-modal form .form-wrapper .form-list .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.request-modal form .form-wrapper .form-item p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+.request-modal form .form-wrapper .form-control {
+  background-color: var(--grey-color);
+}
+.request-modal form .form-wrapper .form-control:focus {
+  box-shadow: 0 0 0 0.05rem var(--blue-color);
+}
+.request-modal form .form-wrapper .form-select {
+  background-color: var(--grey-color);
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+.request-modal form .form-wrapper .form-select:focus {
+  box-shadow: 0 0 0 0.05rem var(--blue-color);
+}
+.request-modal form .form-wrapper textarea {
+  height: 180px;
+}
+.request-modal form .form-wrapper textarea::placeholder {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+.request-modal form .form-wrapper .form-check input {
+  width: 18px;
+  height: 18px;
+}
+.request-modal form .form-wrapper .form-check input:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+
+.request-modal form .form-wrapper .form-check label {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+.request-modal .send-btn {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+  padding: 9px 18px;
+  border-radius: 4px;
+  margin-top: clamp(10px, 1.5vw, 24px);
 }
 /* HEADER CSS END */
 

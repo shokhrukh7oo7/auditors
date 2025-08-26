@@ -1,3 +1,5 @@
+// ============================================================================
+// HEADER MENU BURGER
 const burgerBtn = document.getElementById("burger-btn");
 const navMenu = document.querySelector("nav");
 const showBtn = document.getElementById("show-btn");
@@ -24,3 +26,41 @@ function moveButton() {
 
 moveButton(); // первый запуск
 window.addEventListener("resize", moveButton);
+// ============================================================================
+// REQUEST MODAL
+const showModalBtn = document.querySelectorAll("#show-btn");
+const closeModalBtn = document.getElementById("close-btn");
+const requestModal = document.getElementById("request-modal");
+const overlay = document.getElementById("overlay");
+
+const addHidden = () => {
+  requestModal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+// remove classlist hidden
+const removeHidden = () => {
+  requestModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+showModalBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    removeHidden();
+  });
+});
+
+closeModalBtn.addEventListener("click", () => {
+  addHidden();
+});
+
+overlay.addEventListener("click", () => {
+  addHidden();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    addHidden();
+  }
+});
+// ============================================================================
