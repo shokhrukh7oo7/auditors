@@ -28,6 +28,7 @@
       100dvh - 80px
     ); /* 80px — высота хедера, подстрой при необходимости */
     overflow: auto;
+    border-radius: 16px;
   }
 
   nav.active {
@@ -72,11 +73,32 @@
   .about-collegue-wrapper {
     top: -80px;
   }
+  /* facts */
+  .facts-section .facts-wrapper h3 {
+    text-align: center;
+  }
+  .facts-section .facts-wrapper .fact-item-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    row-gap: 40px;
+  }
+  .facts-section .facts-wrapper .fact-item-wrapper .fact-item {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
   .banner-wrapper {
     height: 555px;
+  }
+}
+
+@media (max-width: 700px) {
+  .seminar-wrapper .events-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
 

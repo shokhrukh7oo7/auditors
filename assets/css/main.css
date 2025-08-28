@@ -36,6 +36,7 @@
   --blue-color: #1f3483;
   --grey-color: #f0edee;
   --dark-grey: #505050;
+  --red-color: #af0407;
 }
 
 * {
@@ -368,12 +369,20 @@ p {
 .about-collegue-section {
   position: relative;
 }
-.about-collegue-wrapper {
+/* .about-collegue-wrapper {
   background-color: var(--text-color-white);
   border-radius: 40px;
   padding: clamp(60px, 10vw, 120px) 0;
   position: absolute;
   width: 100%;
+  top: -114px;
+} */
+
+.about-collegue-wrapper {
+  background-color: var(--text-color-white);
+  border-radius: 40px;
+  padding: clamp(60px, 10vw, 120px) 0 0;
+  position: relative; /* или вообще убрать position */
   top: -114px;
 }
 .about-collegue-wrapper .about-collegue {
@@ -413,4 +422,242 @@ p {
   color: var(--text-color-white);
 }
 /* about collegue end*/
+
+/* fact section start */
+.facts-section .facts-wrapper {
+  background-color: var(--blue-color);
+  padding: clamp(60px, 10vw, 120px) 0;
+  border-radius: 40px;
+  margin: 0 10px;
+}
+
+.facts-section .facts-wrapper .facts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.facts-section .facts-wrapper h3 {
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  line-height: 100%;
+  font-family: "RFDewiExpanded", "sans-serif";
+  margin: 0;
+}
+.facts-section .facts-wrapper .fact-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 2vw, 40px);
+}
+.facts-section .facts-wrapper .fact-item-wrapper .fact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(10px, 1vw, 16px);
+}
+.facts-section .facts-wrapper .fact-item-wrapper .fact-item h5 {
+  font-size: clamp(16px, 1vw, 16px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  margin: 0;
+}
+.facts-section .facts-wrapper .fact-item-wrapper .fact-item p {
+  font-size: clamp(16px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  line-height: 140%;
+  margin: 0;
+}
+.facts-section .facts-wrapper .fact-item-wrapper .fact-item .fact-btn {
+  background-color: var(--text-color-white);
+  color: var(--blue-color);
+  border-radius: 4px;
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 500;
+  padding: 9px 18px;
+}
+.facts-section .facts-wrapper .fact-item-wrapper .fact-item .fact-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+  border-color: var(--text-color-white);
+}
+/* fact section end */
+
+/* calenadr section start */
+.seminar-wrapper {
+  margin: clamp(60px, 10vw, 120px) 0;
+}
+.seminar-wrapper .events-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(24px, 3vw, 48px);
+  padding: 0 0.5rem;
+}
+
+.seminar-wrapper .events-section .events-title {
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--blue-color);
+  line-height: 100%;
+  font-family: "RFDewiExpanded", "sans-serif";
+  margin: 0;
+}
+.seminar-wrapper .events-section .calendar-wrapper {
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.seminar-wrapper .events-section .calendar-wrapper p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue-color);
+}
+
+.seminar-wrapper .calendar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar-wrapper input[type="date"] {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  color: transparent; /* скрываем текст */
+  font-size: 0; /* убираем текстовый ввод */
+  cursor: pointer;
+}
+
+/* скрываем рамку и делаем прозрачным фон */
+.calendar-wrapper input[type="date"]::-webkit-datetime-edit,
+.calendar-wrapper input[type="date"]::-webkit-inner-spin-button,
+.calendar-wrapper input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* оставляем только иконку календаря */
+.calendar-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  opacity: 1; /* делаем иконку видимой */
+}
+
+/* Чтобы в Firefox тоже скрыть текст */
+.calendar-wrapper input[type="date"]::-moz-focus-inner {
+  border: 0;
+}
+
+.seminar-card-wrapper .card-wrapper {
+  position: relative;
+}
+
+.seminar-card-wrapper .card-wrapper .card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.seminar-card-wrapper .card-wrapper .card-img .green-tag {
+  position: absolute;
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  color: var(--text-color-white);
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  top: 16px;
+  left: 16px;
+}
+.seminar-card-wrapper .card-wrapper .card-img .red-tag {
+  position: absolute;
+  background-color: var(--red-color);
+  border-radius: 4px;
+  color: var(--text-color-white);
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  top: 16px;
+  left: 16px;
+}
+
+.seminar-card-wrapper .card-wrapper .card-img .seminar-card-image {
+  width: 100%;
+}
+.seminar-card-wrapper .card-wrapper .card-img .arrow-icon-wrapper {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.seminar-card-wrapper .card-wrapper .card-img .arrow-icon-wrapper .arrow-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--text-color-white);
+}
+
+.seminar-card-wrapper .card-wrapper .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.seminar-card-wrapper .card-wrapper .card-content .card-date {
+  color: var(--blue-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.seminar-card-wrapper .card-wrapper .card-content .card-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color-black);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.seminar-card-wrapper .card-wrapper .card-content .card-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.seminar-card-wrapper .card-wrapper .card-content .card-btn {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+  color: var(--blue-color);
+  padding: 0;
+  cursor: pointer;
+}
+.seminar-card-wrapper .card-wrapper .card-content .card-btn:active {
+  border-color: transparent;
+}
+
+.seminar-card-wrapper .card-wrapper .card-content .card-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+/* calendar section end */
 /* MAIN CSS END */
