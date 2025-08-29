@@ -132,4 +132,8 @@
   .copyright {
     text-align: center;
   }
+  .footer-item .footer-social-wrapper ul {
+    justify-content: center;
+    align-items: center;
+  }
 }
