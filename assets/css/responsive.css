@@ -120,4 +120,16 @@
   .request-modal form .form-wrapper .form-list {
     flex-direction: column;
   }
+  .footer-item .useful-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .copyright {
+    text-align: center;
+  }
 }
