@@ -86,6 +86,29 @@
     justify-content: center;
     align-items: center;
   }
+  /* about-collegue-page */
+  .about-collegue-header {
+    text-align: center;
+  }
+  .about-collegue-header h1,
+  .about-collegue-header p {
+    max-width: 992px;
+  }
+  .about-collegue-banner .banner-description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-collegue-card {
+    align-items: center;
+    text-align: center;
+  }
+  .about-collegue-card img {
+    width: 65px;
+    height: 65px;
+  }
+  /* about-collegue-page */
 }
 
 @media (max-width: 768px) {

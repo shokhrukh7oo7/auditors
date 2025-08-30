@@ -38,6 +38,9 @@
   --dark-grey: #505050;
   --red-color: #af0407;
   --light-grey: #f7f7f7;
+  --card-grey-bg: #e4e9ff;
+  --card-blue-bg: #2f2f46;
+  --card-aqua-bg: #99eeff;
 }
 
 * {
@@ -864,6 +867,124 @@ p {
 }
 
 /* partner section end */
+
+/* ABOUT COLLEGUE PAGE START */
+.about-collegue-header {
+  padding: clamp(20px, 5vw, 40px) 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vw, 24px);
+}
+
+.about-collegue-header h1 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  max-width: 588px;
+}
+
+.about-collegue-header p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 180%;
+  width: 100%;
+  max-width: 650px;
+}
+
+.about-collegue-banner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 3vw, 64px);
+  margin-bottom: clamp(50px, 5vw, 100px);
+}
+.about-collegue-banner .about-collegue-banner-wrapper img {
+  border-radius: 24px;
+  width: 100%;
+  object-fit: cover;
+}
+.about-collegue-banner .banner-description {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(12px, 1vw, 24px);
+}
+
+.about-collegue-banner .banner-description h4 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  max-width: 550px;
+}
+
+.about-collegue-banner .banner-description p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 180%;
+  width: 100%;
+  max-width: 640px;
+}
+
+.about-collegue-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.about-collegue-card {
+  padding: clamp(12px, 2vw, 24px);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.about-collegue-card img {
+  width: 85px;
+  height: 85px;
+}
+
+.about-collegue-card h5 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-family: "RFDewiExpanded", "sans-serif";
+  font-weight: 700;
+  margin: 0;
+}
+.about-collegue-card p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  line-height: 140%;
+}
+.bg-one {
+  background-color: var(--card-grey-bg);
+}
+.bg-two {
+  background-color: var(--card-blue-bg);
+}
+.bg-three {
+  background-color: var(--card-aqua-bg);
+}
+.bg-two h5,
+.bg-two p {
+  color: var(--card-aqua-bg);
+}
+.bg-three h5,
+.bg-three p {
+  color: var(--text-color-black);
+}
+
+.about-collegue-cards-info {
+    margin-bottom: clamp(60px, 10vw, 120px);
+} 
+/* ABOUT COLLEGUE PAGE END */
 
 /* footer start */
 footer {
