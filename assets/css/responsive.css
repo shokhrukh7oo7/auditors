@@ -135,7 +135,10 @@
   .partner-section-wrapper .partner-wrapper .partner-header h3 {
     text-align: center;
   }
-  .about-collegue-bg-wrapper .banner-description .download-wrapper .download-box {
+  .about-collegue-bg-wrapper
+    .banner-description
+    .download-wrapper
+    .download-box {
     flex-direction: column;
   }
 }
