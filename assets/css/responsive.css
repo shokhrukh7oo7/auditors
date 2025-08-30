@@ -94,7 +94,7 @@
   .about-collegue-header p {
     max-width: 992px;
   }
-  .about-collegue-banner .banner-description {
+  .banner-description {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -107,6 +107,10 @@
   .about-collegue-card img {
     width: 65px;
     height: 65px;
+  }
+  .about-collegue-bg-wrapper .banner-description .download-wrapper {
+    justify-content: center;
+    align-items: center;
   }
   /* about-collegue-page */
 }
