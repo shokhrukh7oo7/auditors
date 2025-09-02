@@ -1127,6 +1127,73 @@ p {
   line-height: 140%;
 }
 
+.bg {
+  background-color: var(--light-grey);
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.enter-one-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2vw, 24px);
+}
+.enter-one-wrapper h1 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  max-width: 792px;
+}
+.enter-one-wrapper p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: #777777;
+  line-height: 140%;
+  margin: 0;
+  width: 100%;
+  max-width: 792px;
+}
+
+.enter-one-wrapper .card-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.enter-one-wrapper .card-wrapper .card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--text-color-white);
+  border-radius: 8px;
+  padding: clamp(10px, 1vw, 16px) clamp(10px, 1vw, 16px) 0;
+  width: 20%;
+} 
+
+.enter-one-wrapper .card-wrapper .card-item h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color-black);
+  line-height: 140%;
+}
+
+.enter-one-wrapper .card-wrapper .card-item p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.enter-one-wrapper .card-wrapper .card-item span {
+  font-size: clamp(65px, 8vw, 80px);
+  font-weight: 700;
+  color: var(--card-grey-bg);
+  line-height: 140%;
+  margin: 0;
+}
 /* MEMBERSHIP PAGE END */
 
 /* footer start */
