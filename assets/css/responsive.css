@@ -151,6 +151,16 @@
   .enter-one-wrapper .card-wrapper .card-item span {
     text-align: center;
   }
+  .enter-two-wrapper h1 {
+    max-width: 992px;
+    text-align: center;
+  }
+  .enter-two-wrapper .enter-two-left-right-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   /* membership */
 }
 

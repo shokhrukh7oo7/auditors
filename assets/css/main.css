@@ -1169,7 +1169,7 @@ p {
   border-radius: 8px;
   padding: clamp(10px, 1vw, 16px) clamp(10px, 1vw, 16px) 0;
   width: 20%;
-} 
+}
 
 .enter-one-wrapper .card-wrapper .card-item h6 {
   font-size: 14px;
@@ -1194,6 +1194,46 @@ p {
   line-height: 140%;
   margin: 0;
 }
+
+.enter-two-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2vw, 32px);
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.enter-two-wrapper h1 {
+  font-size: clamp(20px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin: 0;
+  width: 100%;
+  max-width: 588px;
+}
+.enter-two-wrapper .enter-two-left-right-wrapper {
+  display: flex;
+  gap: clamp(14px, 2vw, 20px);
+}
+.enter-two-wrapper .enter-two-left-right-wrapper h5 {
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: 8px;
+}
+.enter-two-wrapper .enter-two-left-right-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.enter-two-wrapper .enter-two-left-right-wrapper ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  list-style: disc;
+}
+
 /* MEMBERSHIP PAGE END */
 
 /* footer start */
