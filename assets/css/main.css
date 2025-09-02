@@ -1411,6 +1411,58 @@ p {
   color: var(--blue-color);
   border-color: var(--blue-color);
 }
+/* table */
+.enter-four-wrapper {
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.table_component table {
+  border: 1px solid #dededf;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+.table_component table thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+.table_component table thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+.table_component table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.table_component table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.table_component caption {
+  caption-side: top;
+  text-align: left;
+}
+
+.table_component th {
+  border: 1px solid #dededf;
+  background-color: #1f3483;
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.table_component td {
+  border: 1px solid #dededf;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  font-size: clamp(12px, 1vw, 14px);
+}
+/* table */
 /* MEMBERSHIP PAGE END */
 
 /* footer start */

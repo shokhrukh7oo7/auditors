@@ -173,6 +173,50 @@
     align-items: center;
     text-align: center;
   }
+  /* table */
+  .table_component table {
+    border: none;
+  }
+  .table_component table,
+  .table_component thead,
+  .table_component tbody,
+  .table_component th,
+  .table_component td,
+  .table_component tr {
+    display: block;
+    width: 100%;
+  }
+
+  .table_component thead {
+    display: none; /* скрываем заголовки */
+  }
+
+  .table_component tr {
+    margin-bottom: 15px;
+    border: 1px solid #dededf;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  .table_component td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .table_component td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #1f3483;
+  }
+
+  .table_component td:last-child {
+    border-bottom: none;
+  }
+  /* table */
   /* membership */
 }
 
