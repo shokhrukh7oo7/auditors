@@ -1046,6 +1046,89 @@ p {
 }
 /* ABOUT COLLEGUE PAGE END */
 
+/* MEMBERSHIP PAGE START */
+.enter {
+  padding: clamp(32px, 5vw, 64px) 0;
+  background-color: var(--light-grey);
+}
+.enter-left-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.enter-left-right-wrapper .enter-left {
+  width: 50%;
+}
+.enter-left-right-wrapper .enter-left h3 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin: 0;
+}
+
+.enter-left-right-wrapper .enter-right {
+  width: 50%;
+}
+
+.enter-left-right-wrapper .enter-right p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: #777777;
+  line-height: 140%;
+  margin: 0;
+}
+
+.enter-info-wrapper {
+  padding: clamp(32px, 5vw, 64px) 0;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.enter-info-wrapper .enter-info-left-wrapper,
+.enter-info-wrapper .enter-info-right-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.enter-info-wrapper .enter-info-left-wrapper h5,
+.enter-info-wrapper .enter-info-right-wrapper h5 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  line-height: 140%;
+  margin: 0;
+}
+
+.enter-info-wrapper .enter-info-left-wrapper .text-color,
+.enter-info-wrapper .enter-info-right-wrapper .text-color {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  color: #22b4f4;
+  line-height: 140%;
+  margin-bottom: clamp(10px, 1vw, 16px);
+}
+
+.enter-info-wrapper .enter-info-left-description,
+.enter-info-wrapper .enter-info-right-description {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.enter-info-wrapper .enter-info-left-description p,
+.enter-info-wrapper .enter-info-right-description p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+}
+
+/* MEMBERSHIP PAGE END */
+
 /* footer start */
 footer {
   background-color: var(--blue-color);
