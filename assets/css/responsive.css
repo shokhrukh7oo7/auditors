@@ -14,6 +14,14 @@
   .enter-one-wrapper .card-wrapper .card-item {
     width: 100%;
   }
+  .enter-three-wrapper .enter-three-left-right-wrapper {
+    flex-direction: column;
+  }
+  .enter-three-wrapper .enter-three-left-right-wrapper .enter-three-left,
+  .enter-three-wrapper .enter-three-left-right-wrapper .enter-three-right {
+    width: 100%;
+    text-align: center;
+  }
   /* membership */
 }
 
@@ -143,6 +151,10 @@
   .enter-one-wrapper .card-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+  .enter-two-wrapper .enter-two-left-right-wrapper .enter-two-left-wrapper,
+  .enter-two-wrapper .enter-two-left-right-wrapper .enter-two-right-wrapper {
+    width: 100%;
+  }
   .enter-one-wrapper h1 {
     text-align: center;
   }
@@ -226,6 +238,19 @@
   /* membership */
   .enter-one-wrapper .card-wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .enter-three-wrapper .enter-three-left-right-wrapper .enter-three-right {
+    flex-direction: column;
+  }
+  .enter-three-wrapper
+    .enter-three-left-right-wrapper
+    .enter-three-right
+    .enter-three-right-card-blue,
+  .enter-three-wrapper
+    .enter-three-left-right-wrapper
+    .enter-three-right
+    .enter-three-right-card-white {
+    width: 100%;
   }
   /* membership */
 }

@@ -1215,6 +1215,10 @@ p {
   display: flex;
   gap: clamp(14px, 2vw, 20px);
 }
+.enter-two-wrapper .enter-two-left-right-wrapper .enter-two-left-wrapper,
+.enter-two-wrapper .enter-two-left-right-wrapper .enter-two-right-wrapper {
+  width: 50%;
+}
 .enter-two-wrapper .enter-two-left-right-wrapper h5 {
   font-size: clamp(15px, 1.5vw, 18px);
   font-weight: 700;
@@ -1234,6 +1238,179 @@ p {
   list-style: disc;
 }
 
+.enter-three-wrapper .enter-three-left-right-wrapper {
+  display: flex;
+  gap: 21px;
+}
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-left,
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-right {
+  width: 50%;
+}
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-left h5 {
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: 8px;
+}
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-left ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  list-style: disc;
+}
+.enter-three-wrapper .enter-three-left-right-wrapper .enter-three-right {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(14px, 2vw, 24px);
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue {
+  background-color: var(--blue-color);
+  border-radius: 12px;
+  padding: clamp(12px, 2vw, 24px);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white {
+  background-color: var(--text-color-white);
+  border-radius: 12px;
+  padding: clamp(12px, 2vw, 24px);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  h5,
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--card-aqua-bg);
+  font-family: "RFDewiExpanded", "sans-serif";
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color-white);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color-white);
+  line-height: 140%;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--blue-color);
+  line-height: 100%;
+}
+
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  img,
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 177px;
+  height: 177px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  .show-btn {
+  background-color: var(--text-color-white);
+  color: var(--blue-color);
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-blue
+  .show-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+  border-color: var(--text-color-white);
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  .member-right-btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 4px;
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+}
+.enter-three-wrapper
+  .enter-three-left-right-wrapper
+  .enter-three-right
+  .enter-three-right-card-white
+  .member-right-btn:hover {
+  background-color: var(--text-color-white);
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
 /* MEMBERSHIP PAGE END */
 
 /* footer start */
