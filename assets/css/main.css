@@ -1416,10 +1416,10 @@ p {
   padding: clamp(32px, 5vw, 64px) 0;
 }
 .table_component table {
-  border: 1px solid #dededf;
+  /* border: 1px solid #dededf; */
   height: 100%;
   width: 100%;
-  table-layout: fixed;
+  /* table-layout: fixed; */
   border-collapse: collapse;
   border-spacing: 1px;
   text-align: left;
@@ -1456,11 +1456,14 @@ p {
 }
 
 .table_component td {
-  border: 1px solid #dededf;
+  /* border: 1px solid #dededf; */
   background-color: #ffffff;
   color: #000000;
   padding: 10px;
   font-size: clamp(12px, 1vw, 14px);
+}
+.table_component tbody tr:nth-child(even) td {
+  background-color: #F0EDEE;
 }
 /* table */
 /* MEMBERSHIP PAGE END */
