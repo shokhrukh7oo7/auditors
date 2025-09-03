@@ -1411,6 +1411,29 @@ p {
   color: var(--blue-color);
   border-color: var(--blue-color);
 }
+
+.table-accordion-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(20px, 2vw, 40px);
+}
+
+.table-accordion-wrapper .left-accordion select,
+.table-accordion-wrapper .right-accordion select {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 12px 16px;
+}
+
+.table-accordion-wrapper .left-accordion select:focus,
+.table-accordion-wrapper .right-accordion select:focus {
+  box-shadow: none;
+  outline: 0;
+  border-color: var(--blue-color);
+}
+
 /* table */
 .enter-four-wrapper {
   padding: clamp(32px, 5vw, 64px) 0;
