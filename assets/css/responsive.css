@@ -302,5 +302,8 @@
     .enter-three-right-card-white {
     width: 100%;
   }
+  .table-accordion-wrapper {
+    flex-direction: column;
+  }
   /* membership */
 }
