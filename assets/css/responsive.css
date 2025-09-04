@@ -244,8 +244,17 @@
   /* CONSULTATION END */
 
   /* STANDARDS START */
-  .standards-content-wrapper, .become-a-member-content-wrapper {
+  .standards-content-wrapper,
+  .become-a-member-content-wrapper,
+  .seminar-wrapper .events-section .events-title-news-detail,
+  .news-detail-content-wrapper {
     text-align: center;
+  }
+  .news-detail-content-wrapper .news-nav {
+    justify-content: center;
+  }
+  .seminar-wrapper .events-section .events-title-news-detail {
+    margin: 0 auto;
   }
   .become-a-member-accordion-wrapper h2 {
     text-align: center;
