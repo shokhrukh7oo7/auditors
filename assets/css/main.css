@@ -1515,6 +1515,161 @@ p {
 /* table */
 /* MEMBERSHIP PAGE END */
 
+/* BECOME A MEMBER PAGE START */
+.become-a-member-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 755px;
+  border-radius: 40px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(16px, 1.5vw, 24px);
+}
+.become-a-member-banner h1 {
+  font-size: clamp(16px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: clamp(16px, 1.5vw, 24px);
+  width: 100%;
+  max-width: 1100px;
+}
+.become-a-member-banner p {
+  font-size: clamp(14px, 2vw, 32px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  line-height: 140%;
+  margin: 0;
+}
+.become-a-member-content-wrapper {
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.become-a-member-content-wrapper h3 {
+  font-size: clamp(16px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: clamp(16px, 1.5vw, 24px);
+}
+.become-a-member-content-wrapper p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+  margin-bottom: clamp(16px, 1.5vw, 24px);
+}
+.become-a-member-content-wrapper p span {
+  font-weight: 700;
+}
+/* accordion */
+.become-a-member-accordion-wrapper .accordion {
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-border-width: 0px;
+}
+.become-a-member-accordion-wrapper .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.become-a-member-accordion-wrapper
+  .accordion
+  .accordion-item
+  button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.become-a-member-accordion-wrapper .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.become-a-member-accordion-wrapper .accordion button:hover,
+.become-a-member-accordion-wrapper .accordion button:focus {
+  cursor: pointer;
+  color: var(--blue-color);
+}
+.become-a-member-accordion-wrapper .accordion button:hover::after,
+.become-a-member-accordion-wrapper .accordion button:focus::after {
+  cursor: pointer;
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+.become-a-member-accordion-wrapper .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.become-a-member-accordion-wrapper .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  /* border: 1px solid;
+  border-radius: 22px; */
+}
+.become-a-member-accordion-wrapper .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 1px;
+  width: 17px;
+  height: 2px;
+  background: currentColor;
+}
+.become-a-member-accordion-wrapper .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 9px;
+  width: 2px;
+  height: 17px;
+  background: currentColor;
+}
+.become-a-member-accordion-wrapper .accordion button[aria-expanded="true"] {
+  color: var(--blue-color);
+}
+.become-a-member-accordion-wrapper
+  .accordion
+  button[aria-expanded="true"]
+  .icon::after {
+  width: 0;
+}
+.become-a-member-accordion-wrapper
+  .accordion
+  button[aria-expanded="true"]
+  + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.become-a-member-accordion-wrapper .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.become-a-member-accordion-wrapper .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+/* accordion */
+/* BECOME A MEMBER PAGE END */
+
 /* footer start */
 footer {
   background-color: var(--blue-color);
