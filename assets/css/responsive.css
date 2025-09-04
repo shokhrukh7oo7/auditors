@@ -235,6 +235,13 @@
     text-align: center;
   }
   /* BECOME A MEMBER */
+
+  /* CONSULTATION START */
+  .consultation-wrapper .consultation-left-right-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* CONSULTATION END */
 }
 
 @media (max-width: 768px) {

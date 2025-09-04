@@ -1546,7 +1546,7 @@ p {
   margin: 0;
 }
 .become-a-member-content-wrapper {
-  padding: clamp(32px, 5vw, 64px) 0;
+  padding: 0 0 clamp(32px, 5vw, 64px) 0;
 }
 .become-a-member-content-wrapper h3 {
   font-size: clamp(16px, 3vw, 48px);
@@ -1669,7 +1669,7 @@ p {
   max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
-  background-color: #F0EDEE;
+  background-color: #f0edee;
 }
 .become-a-member-accordion-wrapper .accordion .accordion-content {
   opacity: 0;
@@ -1687,6 +1687,98 @@ p {
 }
 /* accordion */
 /* BECOME A MEMBER PAGE END */
+
+/* CONSULTATION START */
+.consultation-wrapper {
+  background-color: var(--blue-color);
+  padding: clamp(32px, 5vw, 64px) 0;
+  margin: clamp(60px, 10vw, 120px) 10px;
+  border-radius: 40px;
+}
+
+.consultation-wrapper .consultation-left-right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(14px, 2vw, 24px);
+}
+
+.consultation-wrapper .consultation-left-right-wrapper .consultation-left h2 {
+  font-size: clamp(24px, 3vw, 46px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  width: 100%;
+  max-width: 700px;
+}
+.consultation-wrapper .consultation-left-right-wrapper .consultation-right {
+  width: 100%;
+  max-width: 400px;
+}
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper {
+  background-color: var(--text-color-white);
+  padding: 16px;
+  border-radius: 8px;
+}
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper
+  h4 {
+  font-size: clamp(14px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: clamp(14px, 2vw, 24px);
+}
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper
+  form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper
+  form
+  input {
+  background-color: #f0edee;
+  font-size: 16px;
+  padding: 11px 16px;
+}
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper
+  form
+  input:focus {
+  box-shadow: none;
+  border-color: var(--blue-color);
+}
+
+.consultation-wrapper
+  .consultation-left-right-wrapper
+  .consultation-right
+  .form-wrapper
+  form
+  .consultation-btn {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+  width: 100%;
+  font-size: 16px;
+}
+/* CONSULTATION END */
 
 /* footer start */
 footer {
