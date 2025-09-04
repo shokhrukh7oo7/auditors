@@ -244,7 +244,7 @@
   /* CONSULTATION END */
 
   /* STANDARDS START */
-  .standards-content-wrapper {
+  .standards-content-wrapper, .become-a-member-content-wrapper {
     text-align: center;
   }
   .become-a-member-accordion-wrapper h2 {

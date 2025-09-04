@@ -1777,6 +1777,7 @@ p {
   color: var(--text-color-white);
   width: 100%;
   font-size: 16px;
+  padding: 10px 15px;
 }
 /* CONSULTATION END */
 
@@ -1840,6 +1841,9 @@ p {
   font-weight: 400;
   color: var(--text-color-black);
   line-height: 140%;
+}
+.zero-padding {
+  padding: 0;
 }
 /* DEVOLOPMENT PAGE END*/
 
