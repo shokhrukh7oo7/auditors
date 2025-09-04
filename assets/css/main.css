@@ -1563,32 +1563,47 @@ p {
   line-height: 140%;
   margin-bottom: clamp(16px, 1.5vw, 24px);
 }
+.become-a-member-content-wrapper p:last-child {
+  margin-bottom: 0;
+}
 .become-a-member-content-wrapper p span {
   font-weight: 700;
 }
 /* accordion */
+.become-a-member-accordion-wrapper h2 {
+  font-size: clamp(16px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  font-family: "RFDewiExpanded", "sans-serif";
+  line-height: 100%;
+  margin-bottom: clamp(23px, 1.5vw, 32px);
+}
 .become-a-member-accordion-wrapper .accordion {
   --bs-accordion-border-color: transparent;
   --bs-accordion-border-width: 0px;
 }
 .become-a-member-accordion-wrapper .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
+  background-color: var(--text-color-white);
 }
 .become-a-member-accordion-wrapper
   .accordion
   .accordion-item
   button[aria-expanded="true"] {
-  border-bottom: 1px solid #03b5d2;
+  border-bottom: 1px solid #e5e5e5;
 }
 .become-a-member-accordion-wrapper .accordion button {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   text-align: left;
   width: 100%;
-  padding: 1em 0;
-  color: #7288a2;
-  font-size: 1.15rem;
-  font-weight: 400;
+  padding: 1em;
+  color: var(--text-color-black);
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 500;
   border: none;
   background: none;
   outline: none;
@@ -1605,17 +1620,17 @@ p {
   border: 1px solid var(--blue-color);
 }
 .become-a-member-accordion-wrapper .accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
+  flex: 1 1 auto;
+  /* margin-right: 12px; */
+  padding: 0;
+  word-break: break-word;
 }
 .become-a-member-accordion-wrapper .accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
+  position: relative;
+  flex: 0 0 22px;
   width: 22px;
   height: 22px;
-  /* border: 1px solid;
-  border-radius: 22px; */
+  display: inline-block;
 }
 .become-a-member-accordion-wrapper .accordion button .icon::before {
   display: block;
@@ -1654,6 +1669,7 @@ p {
   max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+  background-color: #F0EDEE;
 }
 .become-a-member-accordion-wrapper .accordion .accordion-content {
   opacity: 0;
@@ -1663,9 +1679,11 @@ p {
   will-change: opacity, max-height;
 }
 .become-a-member-accordion-wrapper .accordion .accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 2em 0;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 16px 0;
+  padding: 0 32px;
 }
 /* accordion */
 /* BECOME A MEMBER PAGE END */
