@@ -242,6 +242,15 @@
     text-align: center;
   }
   /* CONSULTATION END */
+
+  /* STANDARDS START */
+  .standards-content-wrapper {
+    text-align: center;
+  }
+  .become-a-member-accordion-wrapper h2 {
+    text-align: center;
+  }
+  /* STANDARDS END */
 }
 
 @media (max-width: 768px) {

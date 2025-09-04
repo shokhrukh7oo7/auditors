@@ -1785,7 +1785,7 @@ p {
   padding: clamp(32px, 5vw, 64px) 0;
 }
 .seminar-wrapper .events-section .events-title-development {
-  font-size: clamp(24px, 2vw, 48px);
+  font-size: clamp(24px, 4vw, 48px);
   font-weight: 700;
   color: var(--blue-color);
   line-height: 100%;
@@ -1795,7 +1795,52 @@ p {
   width: 100%;
   max-width: 792px;
 }
+.standards-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vw, 64px);
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+.standards-content-wrapper h1 {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 700;
+  color: var(--blue-color);
+  line-height: 100%;
+  font-family: "RFDewiExpanded", "sans-serif";
+  margin: 0;
+}
+.standards-content-wrapper .standards-content-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vw, 64px);
+}
+.standards-content-wrapper
+  .standards-content-description-wrapper
+  .standards-content-description {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 2vw, 20px);
+}
+.standards-content-wrapper
+  .standards-content-description-wrapper
+  .standards-content-description
+  h4 {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--blue-color);
+  line-height: 140%;
+  margin: 0;
+}
 
+.standards-content-wrapper
+  .standards-content-description-wrapper
+  .standards-content-description
+  p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 140%;
+}
 /* DEVOLOPMENT PAGE END*/
 
 /* footer start */
