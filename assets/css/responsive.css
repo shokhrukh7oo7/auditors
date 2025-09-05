@@ -296,6 +296,13 @@
     height: 555px;
   }
   /* become a member */
+
+  .team-modal-content .modal-content-team {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px) {

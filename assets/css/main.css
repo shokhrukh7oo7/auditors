@@ -1140,14 +1140,37 @@ p {
   width: 100%;
   max-width: 700px;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
+  margin: 10px;
+  height: 75%;
+}
+
+.team-modal-content .modal-content-team {
+  display: flex;
+  gap: clamp(10px, 1vw, 16px);
+}
+.team-modal-content .modal-content-team .modal-image-content {
+  width: 100%;
+}
+.team-modal-content .modal-content-team .modal-image-content h3 {
+  font-size: clamp(18px, 1.5vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.team-modal-content .modal-content-team .modal-image-content p {
+  font-size: clamp(14px, 1vw, 16px);
+  color: var(--text-color-black);
+  font-weight: 400;
 }
 
 .team-modal-content img {
   width: 100%;
+  max-width: 267px;
+  /* aspect-ratio: 1 / 1.4; */
   border-radius: 10px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .team-close {
