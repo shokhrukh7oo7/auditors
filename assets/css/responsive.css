@@ -275,6 +275,11 @@
     align-items: center;
   }
   /* CONTACT END */
+  /* tabs */
+  .tabs {
+    justify-content: center;
+  }
+  /* tabs */
 }
 
 @media (max-width: 768px) {
@@ -383,4 +388,10 @@
     flex-wrap: wrap;
   }
   /* CONTACT END */
+
+  /* tabs */
+  .tabs {
+    justify-content: center;
+  }
+  /* tabs */
 }
