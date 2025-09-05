@@ -400,5 +400,8 @@
   .tabs {
     justify-content: center;
   }
+  .team-modal-content img {
+    height: 150px;
+  }
   /* tabs */
 }
