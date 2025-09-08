@@ -113,24 +113,36 @@ const teamCloseBtn = document.getElementById("teamCloseBtn");
 cards.forEach((card) => {
   card.addEventListener("click", () => {
     teamModal.style.display = "flex";
+
+    // задержка нужна, чтобы transition сработал после display:flex
+    setTimeout(() => {
+      teamModal.classList.add("show");
+    }, 10);
+
     teamModalImg.src = card.dataset.img;
     teamModalName.textContent = card.dataset.name;
     teamModalRole.textContent = card.dataset.role;
   });
 });
 
-teamCloseBtn.addEventListener("click", () => {
-  teamModal.style.display = "none";
-});
+function closeModal() {
+  teamModal.classList.remove("show");
+  setTimeout(() => {
+    teamModal.style.display = "none";
+  }, 400); // 400мс = столько же, сколько transition
+}
+
+teamCloseBtn.addEventListener("click", closeModal);
 
 window.addEventListener("click", (e) => {
   if (e.target === teamModal) {
-    teamModal.style.display = "none";
+    closeModal();
   }
 });
+
 // Закрытие по ESC
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    teamModal.style.display = "none";
+    closeModal();
   }
 });
