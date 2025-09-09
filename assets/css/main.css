@@ -1628,7 +1628,7 @@ p {
   text-align: left;
   border-radius: 10px;
   overflow: hidden;
-  border-collapse: separate;
+  /* border-collapse: separate; */
 }
 
 .table_component table thead tr th:first-child {
@@ -1650,7 +1650,7 @@ p {
 }
 
 .table_component th {
-  border: 1px solid #dededf;
+  /* border: 1px solid #dededf; */
   background-color: #1f3483;
   color: #fff;
   padding: 12px;

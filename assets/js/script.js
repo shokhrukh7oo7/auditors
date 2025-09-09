@@ -132,7 +132,9 @@ function closeModal() {
   }, 400); // 400мс = столько же, сколько transition
 }
 
-teamCloseBtn.addEventListener("click", closeModal);
+if (teamCloseBtn) {
+  teamCloseBtn.addEventListener("click", closeModal);
+}
 
 window.addEventListener("click", (e) => {
   if (e.target === teamModal) {
