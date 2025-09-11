@@ -1575,6 +1575,23 @@ p {
   margin-bottom: clamp(20px, 2vw, 40px);
 }
 
+.table-accordion-wrapper .button-group .toggle-button {
+  background-color: #f0edee;
+  color: var(--blue-color);
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* Активная кнопка */
+.table-accordion-wrapper .button-group .toggle-button.active {
+  background-color: var(--blue-color);
+  color: var(--text-color-white);
+}
+
 .table-accordion-wrapper .left-accordion select,
 .table-accordion-wrapper .right-accordion select {
   font-size: 14px;

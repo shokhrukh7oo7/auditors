@@ -148,3 +148,23 @@ window.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+// ============================================================================
+// TAB TABLE JS
+const btnCompanies = document.getElementById("btn-companies");
+const btnAuditors = document.getElementById("btn-auditors");
+const companiesTable = document.getElementById("companies-table");
+const auditorsTable = document.getElementById("auditors-table");
+
+btnCompanies.addEventListener("click", () => {
+  btnCompanies.classList.add("active");
+  btnAuditors.classList.remove("active");
+  companiesTable.classList.remove("hidden");
+  auditorsTable.classList.add("hidden");
+});
+
+btnAuditors.addEventListener("click", () => {
+  btnAuditors.classList.add("active");
+  btnCompanies.classList.remove("active");
+  auditorsTable.classList.remove("hidden");
+  companiesTable.classList.add("hidden");
+});

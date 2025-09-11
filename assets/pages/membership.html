@@ -446,24 +446,15 @@
             </div>
 
             <div class="table-accordion-wrapper">
-              <div class="left-accordion">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Тип: Все</option>
-                  <option value="1">Аудиторов</option>
-                  <option value="2">Аудиторская организация</option>
-                </select>
-              </div>
-
-              <div class="right-accordion">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Область: Все</option>
-                  <option value="1">Активный статус</option>
-                  <option value="2">Неактивный статус</option>
-                </select>
+               <!-- 🔘 Кнопки переключения -->
+              <div class="button-group">
+                <button class="toggle-button active" id="btn-companies">Аудиторские компании</button>
+                <button class="toggle-button " id="btn-auditors">Аудиторы</button>
               </div>
             </div>
 
-            <div class="table_component" role="region" tabindex="0">
+            <!-- 📋 Таблица Аудиторские компании -->
+            <div class="table_component" id="companies-table" role="region" tabindex="0">
               <table>
                 <thead>
                   <tr>
@@ -474,77 +465,138 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-label="Название компании">Алымджан Анверов</td>
+                    <td data-label="Название компании">AeroTech Industries</td>
                     <td data-label="Телефон">+7 (777) 123-45-67</td>
-                    <td data-label="Город">г. Алматы</td>
+                    <td data-label="Город">Алматы қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">TechSolutions Corp</td>
                     <td data-label="Телефон">+7 (777) 234-56-78</td>
-                    <td data-label="Город">г. Нур-Султан</td>
+                    <td data-label="Город">Нұр-Сұлтан қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">InnoTech Group</td>
-                    <td data-label="Телефон">+7 (777) 345-67-89</td>
-                    <td data-label="Город">г. Караганда</td>
-                  </tr>
-                  <tr>
-                    <td data-label="Название компании">Олжас Назаров</td>
-                    <td data-label="Телефон">+7 (777) 456-78-90</td>
-                    <td data-label="Город">г. Шымкент</td>
+                    <td data-label="Телефон">+7 704 456 78 90</td>
+                    <td data-label="Город">Қарағанды қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">GreenEnergy Inc</td>
-                    <td data-label="Телефон">+7 (777) 567-89-01</td>
-                    <td data-label="Город">г. Павлодар</td>
+                    <td data-label="Телефон">+7 705 567 89 01</td>
+                    <td data-label="Город">Павлодар қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">SmartWare Solutions</td>
-                    <td data-label="Телефон">+7 (777) 678-90-12</td>
-                    <td data-label="Город">г. Талдыкорган</td>
+                    <td data-label="Телефон">+7 706 678 90 12</td>
+                    <td data-label="Город">Талдықорған қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">HealthPlus Medical</td>
-                    <td data-label="Телефон">+7 (777) 789-01-23</td>
-                    <td data-label="Город">г. Усть-Каменогорск</td>
-                  </tr>
-                  <tr>
-                    <td data-label="Название компании">Артем Алексеев</td>
-                    <td data-label="Телефон">+7 (777) 852-74-19</td>
-                    <td data-label="Город">г. Костанай</td>
+                    <td data-label="Телефон">+7 707 789 01 23</td>
+                    <td data-label="Город">Өскемен қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">LogisticsPro Ltd</td>
-                    <td data-label="Телефон">+7 (777) 963-85-27</td>
-                    <td data-label="Город">г. Атырау</td>
+                    <td data-label="Телефон">+7 709 901 23 45</td>
+                    <td data-label="Город">Атырау қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">AeroTech Industries</td>
-                    <td data-label="Телефон">+7 (777) 852-74-19</td>
-                    <td data-label="Город">г. Актау</td>
+                    <td data-label="Телефон">+7 710 012 34 56</td>
+                    <td data-label="Город">Ақтау қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">CulinaryArts Group</td>
-                    <td data-label="Телефон">+7 (777) 963-85-27</td>
-                    <td data-label="Город">г. Семей</td>
+                    <td data-label="Телефон">+7 711 123 45 67</td>
+                    <td data-label="Город">Семей қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">FashionTrend LLC</td>
-                    <td data-label="Телефон">+7 (777) 852-74-19</td>
-                    <td data-label="Город">г. Тараз</td>
+                    <td data-label="Телефон">+7 712 234 56 78</td>
+                    <td data-label="Город">Тараз қаласы</td>
                   </tr>
                   <tr>
-                    <td data-label="Название компании">Нурлан Сабуров</td>
-                    <td data-label="Телефон">+7 (777) 852-74-19</td>
-                    <td data-label="Город">г. Петропавловск</td>
+                    <td data-label="Название компании">AeroTech Industries</td>
+                    <td data-label="Телефон">+7 713 345 67 89</td>
+                    <td data-label="Город">Петропавл қаласы</td>
                   </tr>
                   <tr>
                     <td data-label="Название компании">MediaWave Productions</td>
-                    <td data-label="Телефон">+7 (777) 852-74-19</td>
-                    <td data-label="Город">г. Шахтинск</td>
+                    <td data-label="Телефон">+7 714 456 78 90</td>
+                    <td data-label="Город">Шахтинск қаласы</td>
                   </tr>
+                  <!-- Добавь остальные строки при необходимости -->
                 </tbody>
               </table>
+            </div>
+
+              <div class="table_component hidden" id="auditors-table" role="region" tabindex="0">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ФИО</th>
+                      <th>Город</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="ФИО">Александр Петров</td>
+                      <td data-label="Город">Алматы</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Иван Сидоров</td>
+                      <td data-label="Город">Нур-Султан</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Дмитрий Ковалев</td>
+                      <td data-label="Город">Караганда</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Светлана Смирнова</td>
+                      <td data-label="Город">Шымкент</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Екатерина Васильева</td>
+                      <td data-label="Город">Павлодар</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Андрей Федоров</td>
+                      <td data-label="Город">Талдыкорган</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Мария Лебедева</td>
+                      <td data-label="Город">Өскемен</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Николай Романов</td>
+                      <td data-label="Город">Костанай</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Ольга Кузнецова</td>
+                      <td data-label="Город">Атырау</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Виктория Громова</td>
+                      <td data-label="Город">Актау</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Сергей Михайлов</td>
+                      <td data-label="Город">Семей</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Татьяна Орлова</td>
+                      <td data-label="Город">Тараз</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Анатолий Соловьев</td>
+                      <td data-label="Город">Петропавл</td>
+                    </tr>
+                    <tr>
+                      <td data-label="ФИО">Елена Фролова</td>
+                      <td data-label="Город">Шахтинск</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
