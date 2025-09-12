@@ -129,7 +129,7 @@ function closeModal() {
   teamModal.classList.remove("show");
   setTimeout(() => {
     teamModal.style.display = "none";
-  }, 400); // 400мс = столько же, сколько transition
+  }, 400);
 }
 
 if (teamCloseBtn) {
