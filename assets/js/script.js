@@ -155,12 +155,14 @@ const btnAuditors = document.getElementById("btn-auditors");
 const companiesTable = document.getElementById("companies-table");
 const auditorsTable = document.getElementById("auditors-table");
 
-btnCompanies.addEventListener("click", () => {
-  btnCompanies.classList.add("active");
-  btnAuditors.classList.remove("active");
-  companiesTable.classList.remove("hidden");
-  auditorsTable.classList.add("hidden");
-});
+if (btnCompanies) {
+  btnCompanies.addEventListener("click", () => {
+    btnCompanies.classList.add("active");
+    btnAuditors.classList.remove("active");
+    companiesTable.classList.remove("hidden");
+    auditorsTable.classList.add("hidden");
+  });
+}
 
 btnAuditors.addEventListener("click", () => {
   btnAuditors.classList.add("active");
