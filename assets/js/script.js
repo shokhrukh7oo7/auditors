@@ -163,10 +163,11 @@ if (btnCompanies) {
     auditorsTable.classList.add("hidden");
   });
 }
-
-btnAuditors.addEventListener("click", () => {
-  btnAuditors.classList.add("active");
-  btnCompanies.classList.remove("active");
-  auditorsTable.classList.remove("hidden");
-  companiesTable.classList.add("hidden");
-});
+if (btnAuditors) {
+  btnAuditors.addEventListener("click", () => {
+    btnAuditors.classList.add("active");
+    btnCompanies.classList.remove("active");
+    auditorsTable.classList.remove("hidden");
+    companiesTable.classList.add("hidden");
+  });
+}
