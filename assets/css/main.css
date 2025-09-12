@@ -1126,9 +1126,13 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
-/* .card .card-info {
-  display: none;
-} */
+.card .card-info {
+  color: var(--text-color-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: 5px;
+}
 /* Модалка */
 .team-modal {
   position: fixed;
@@ -1147,15 +1151,15 @@ p {
   background: white;
   border-radius: 12px;
   width: 100%;
-  max-width: 700px;
-  padding: 20px;
+  max-width: 950px;
+  padding: 20px 20px clamp(20px, 6vw, 100px);
   transform: scale(0.5);
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   /* text-align: center; */
   position: relative;
   margin: 10px;
-  height: 75%;
+  /* height: 75%; */
 }
 .team-modal.show .team-modal-content {
   transform: scale(1);
@@ -1175,10 +1179,27 @@ p {
   color: var(--text-color-black);
   margin: 0;
 }
-.team-modal-content .modal-content-team .modal-image-content p {
-  font-size: clamp(14px, 1vw, 16px);
-  color: var(--text-color-black);
+.team-modal-content .modal-content-team .modal-image-content #teamModalRole {
+  font-size: clamp(15px, 2vw, 24px);
+  color: #8a8a8a;
   font-weight: 400;
+}
+.team-modal-content .modal-content-team .modal-image-content #teamModalInfo {
+  color: var(--text-color-black);
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 400;
+  line-height: 120%;
+  margin: clamp(10px, 1vw, 16px) 0;
+}
+.team-modal-content .modal-content-team .modal-image-content .contact-info {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 500;
+  color: var(--blue-color);
+}
+.team-modal-content .modal-content-team .modal-image-content .contact-info a {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 400;
+  color: var(--blue-color);
 }
 
 .team-modal-content img {
