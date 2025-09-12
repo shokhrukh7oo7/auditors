@@ -122,10 +122,10 @@ cards.forEach((card) => {
       teamModal.classList.add("show");
     }, 10);
 
-    // teamModalImg.src = card.dataset.img;
-    // teamModalName.textContent = card.dataset.name;
-    // teamModalRole.textContent = card.dataset.role;
-    // teamModalInfo.textContent = card.dataset.info;
+    teamModalImg.src = card.dataset.img;
+    teamModalName.textContent = card.dataset.name;
+    teamModalRole.textContent = card.dataset.role;
+    teamModalInfo.textContent = card.dataset.info;
 
     // Телефон и почта
     teamModalPhone.textContent = card.dataset.phone;
