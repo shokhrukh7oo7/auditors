@@ -1126,7 +1126,9 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
-
+/* .card .card-info {
+  display: none;
+} */
 /* Модалка */
 .team-modal {
   position: fixed;

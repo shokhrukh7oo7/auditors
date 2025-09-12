@@ -108,6 +108,9 @@ const teamModal = document.getElementById("teamModal");
 const teamModalImg = document.getElementById("teamModalImg");
 const teamModalName = document.getElementById("teamModalName");
 const teamModalRole = document.getElementById("teamModalRole");
+const teamModalInfo = document.getElementById("teamModalInfo");
+const teamModalPhone = document.getElementById("teamModalPhone");
+const teamModalEmail = document.getElementById("teamModalEmail");
 const teamCloseBtn = document.getElementById("teamCloseBtn");
 
 cards.forEach((card) => {
@@ -119,9 +122,16 @@ cards.forEach((card) => {
       teamModal.classList.add("show");
     }, 10);
 
-    teamModalImg.src = card.dataset.img;
-    teamModalName.textContent = card.dataset.name;
-    teamModalRole.textContent = card.dataset.role;
+    // teamModalImg.src = card.dataset.img;
+    // teamModalName.textContent = card.dataset.name;
+    // teamModalRole.textContent = card.dataset.role;
+    // teamModalInfo.textContent = card.dataset.info;
+
+    // Телефон и почта
+    teamModalPhone.textContent = card.dataset.phone;
+    teamModalPhone.href = "tel:" + card.dataset.phone.replace(/\s+/g, "");
+    teamModalEmail.textContent = card.dataset.email;
+    teamModalEmail.href = "mailto:" + card.dataset.email;
   });
 });
 
