@@ -2284,7 +2284,6 @@ p {
   justify-content: center;
   align-items: center;
   gap: clamp(16px, 2vw, 32px);
-  padding: clamp(40px, 8vw, 100px) 0;
 }
 .page-404-wrapper h1 {
   font-size: clamp(46px, 15vw, 200px);
