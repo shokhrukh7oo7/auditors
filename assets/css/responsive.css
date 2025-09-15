@@ -303,6 +303,10 @@
     align-items: center;
     text-align: center;
   }
+
+  .team-modal-content img {
+    height: 250px;
+  }
 }
 
 @media (max-width: 700px) {
